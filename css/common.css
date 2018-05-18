@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    line-height: 24px;
+    color:#555;
+    background: #fff;
+}
+ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,button {
+    margin: 0;
+    padding: 0;
+}
+ul,ol {
+    list-style: none;
+}
+input,button {
+    font-family: "Microsoft YaHei";
+}
+a {
+    color:#555;
+    text-decoration: none;
+}
+a:hover {
+    color:#f30;
+    text-decoration: none;
+}
+.clearfloat:after {
+    content: "";
+    display: table;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.container {
+    width:1000px;
+    margin: 0 auto;
+}
+/*header*/
+.header {
+    height: 90px;
+}
+.logo {
+    width: 84px;
+    height: 41px;
+    background: url(../images/logo.png) no-repeat 0 0;
+    float: left;
+    margin-top: 21px;
+}
+.logo>a {
+    display: block;
+    height: 100%;
+}
+.h_cart {
+    float: right;
+    margin-top: 30px;
+}
+.h_cart>a {
+    display: block;
+    box-sizing: border-box;
+    width:140px;
+    height: 32px;
+    line-height: 30px;
+    border:1px solid #ddd;
+    padding-left:10px;
+    background: #f9f9f9;
+    font-size: 14px;
+    color: #666;
+}
+.h_cart:hover>a {
+    color:#f30;
+    background: #fff;
+}
+.icon-cart {
+    display: inline-block;
+    vertical-align: middle;
+    width:19px;
+    height: 14px;
+    background: url(../images/iconlist.png) no-repeat 0 -210px;
+    margin-right: 9px;
+    margin-top:-4px;
+}
+
+/*navbar*/
+.navbar {
+    height: 40px;
+    background: #57bc4c;
+    border-bottom:2px solid #c1eebd;
+}
+.nav {
+    float: left;
+}
+.nav ul li {
+    float: left;
+}
+.nav ul li a {
+    display: block;
+    padding: 0 24px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 15px;
+}
+.nav ul li a:hover {
+    background: #4aaf3f;
+}
+.nav ul li.active a {
+    background: #3da232;
+}
+.nav_user {
+    float: right;
+    position: relative;
+}
+.nav_user>p {
+    width: 140px;
+    text-align: center;
+    color:#fff;
+    line-height: 40px;
+    font-size: 15px;
+    background: #77c558;
+}
+.nav_user>p>a {
+    color: #fff;
+}
+.nav_user>p>a:hover {
+    color: #ffff99;
+}
+.nav_user>a {
+    display: block;
+    font-size: 15px;
+    color:#fff;
+    line-height: 40px;
+    background: #77c558;
+    padding: 0 14px 0 12px;
+}
+.nav_user>a:hover {
+    background: #82cb64;
+}
+.icon-user {
+    display: inline-block;
+    vertical-align: middle;
+    width:20px;
+    height: 22px;
+    background: url(../images/iconlist.png) no-repeat 0 -250px;
+    margin-right: 12px;
+    margin-top:-4px;
+}
+.icon-triangle {
+    display: inline-block;
+    vertical-align: middle;
+    border:4px solid transparent;
+    border-top-color:#fff ;
+    margin-left:14px;
+    margin-top:2px;
+    transition: all .3s;
+    transform-origin:center 2px;
+}
+.nav_user:hover .user_dropdown{
+  display: block;
+}
+.nav_user:hover .icon-triangle {
+    transform: rotate(180deg);
+}
+.user_dropdown {
+    position: absolute;
+    top:40px;
+    right:0;
+    background: #fff;
+    width: 280px;
+    font-size: 13px;
+    box-shadow: 2px 2px 3px #999;
+    display: none;
+    z-index: 900;
+}
+.user_dropdown>p {
+    padding: 16px 18px;
+}
+.user_dropdown>p>span {
+    color: #f60;
+}
+.user_dropdown .userlink_1 {
+    padding: 0 12px 16px;
+}
+.user_dropdown .userlink_1>a {
+    float: left;
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+    background: #57bc4c;
+}
+.user_dropdown .userlink_1>a:last-child {
+    float: right;
+}
+.user_dropdown .userlink_1>a:hover {
+    background: #4aaf3f;
+}
+/*footer*/
+#footer {
+    margin-top: 50px;
+    background: #eee;
+    border-top:1px solid #ddd;
+}
+.f_1 {
+    margin: 10px 0;
+}
+.f_1 ul {
+    float: left;
+}
+.f_1 ul li {
+    float: left;
+    margin-right: 110px;
+}
+.f_1 ul li h5 {
+    font-size: 14px;
+    font-weight: lighter;
+}
+.f_1 ul li a {
+    display: block;
+    color: #666;
+}
+.f_1 ul li a:hover {
+    color: #f60;
+}
+.f_1 dl {
+    float: left;
+    margin-top: 30px;
+}
+.f_1 dl dt {
+    float: left;
+    width: 40px;
+    height: 39px;
+    background: url(../images/iconlist.png) no-repeat 0 -410px;
+    margin-top: 10px;
+}
+.f_1 dl dd {
+    float: left;
+    font-size: 18px;
+    line-height: 30px;
+    color: #666;
+    margin-left: 20px;
+}
+.f_2 {
+    text-align: center;
+    color: #999;
+    padding: 8px 0;
+    border-top:1px solid #ddd;
+    line-height: 20px;
+}
